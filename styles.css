@@ -1,0 +1,316 @@
+/* Main stylesheet for the website.  */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Default font family */
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #ADD8E6; /* Light blue color */
+    padding: 15px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: black !important;
+}
+/* Hero Section */
+.hero {
+    background: url('path/to/hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* Introduction */
+.introduction {
+    padding: 50px 15px;
+}
+
+.introduction h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* News/Updates Carousel */
+.carousel-item img {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #f8f9fa;
+    padding: 50px 15px;
+}
+
+.testimonials blockquote {
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+    margin: 0;
+    font-style: italic;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 15px;
+}
+
+.about-us img {
+    border-radius: 50%;
+}
+
+/* Mission Section */
+.mission {
+    background-color: #e9ecef;
+    padding: 50px 15px;
+}
+
+.mission h2 {
+    font-size: 2rem;
+}
+
+/* Programs */
+.programs {
+    padding: 50px 15px;
+}
+
+.programs .card {
+    margin-bottom: 20px;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Apply/Register */
+.apply-register {
+    background-color: #f8f9fa;
+    padding: 50px 15px;
+}
+
+/* Blog */
+.blog-posts {
+    padding: 50px 15px;
+}
+
+.blog-posts .card {
+    margin-bottom: 20px;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+}
+
+/* Donate Page */
+.donate {
+    background-color: #e9ecef;
+    padding: 50px 15px;
+}
+
+/* Merchandise */
+.product-listings {
+    padding: 50px 15px;
+}
+
+.product-listings .card {
+    margin-bottom: 20px;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+}
+
+/* Contact Us */
+.contact-form {
+    padding: 50px 15px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-item img {
+        max-height: 200px;
+    }
+
+    .introduction h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonials blockquote {
+        font-size: 0.9rem;
+    }
+
+    .mission h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Button and Form Styling */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+/* Custom Styles */
+.custom-background {
+    background-color: #f0f8ff;
+}
+
+.custom-text {
+    color: #6c757d;
+}
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Dropdown hover effects 
+.navbar-nav .dropdown-menu {
+    display: none;
+}
+
+/*.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+*/
+
+/* Navbar link hover effects 
+.nav-link {
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff69b4; /* Pink hover effect */
+}
+
+/* Animation for dropdown 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    */
+/* Basic scroll reveal effect 
+.reveal {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Customize the invalid feedback */
+.invalid-feedback {
+    display: none;
+}
+
+.was-validated .form-control:invalid ~ .invalid-feedback {
+    display: block;
+}
+
+/* Back-to-Top Button Styles */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+    background-color: #ADD8E6; /* Light blue color */; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#back-to-top:hover {
+    background-color: #0056b3; /* Button hover color */
+}
+
